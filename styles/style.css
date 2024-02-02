@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
 }
+
 .header__links-list {
   display: flex;
   gap: 31px;
@@ -57,6 +58,7 @@
   letter-spacing: 0.18px;
   font-style: normal;
 }
+
 .address a {
   border-bottom: solid 1px #000000;
 }
@@ -85,7 +87,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 100px;
@@ -140,6 +141,7 @@
 }
 
 .classbet-button {
+  background-color: transparent;
   color: #fff;
   font-family: "Raleway", sans-serif;
   text-align: center;
@@ -179,6 +181,14 @@
 .card {
   width: 334px;
   height: 563px;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  padding: 51px 40px 48px 40px;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card__title {
@@ -204,39 +214,15 @@
 }
 
 .card_type_film {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  padding: 51px 40px 48px 40px;
-  flex-direction: column;
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card_type_book {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-  padding: 51px 40px 48px 40px;
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card_type_picture {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding: 51px 40px 48px 40px;
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .lots__look-more-link {
@@ -300,7 +286,7 @@
 
 .footer {
   margin-top: 182px;
-  padding: 0 50px 50px 50px;
+  padding: 0 50px 88px 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 98px;
